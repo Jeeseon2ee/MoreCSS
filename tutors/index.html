@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="tutors.css">
 </head>
 <body>
+    <div class="backdrop"></div>
     <div class="background"></div>
     <header class="main_header">
         <div>
+            <button class="toggle_button">
+                <span class="toggle_button_bar"></span>
+                <span class="toggle_button_bar"></span>
+                <span class="toggle_button_bar"></span>
+            </button>
             <a href="../index.html" class="main_header_brand">
-                <span>Jeeseon Lee</span>
+                <div>Jeeseon Coding</div>
                 <img src="../logo.png" alt="Jeeseon Lee - Your Star">
             </a>
         </div>
@@ -25,6 +31,20 @@
         </nav>
     </header>
 
+    <nav class="mobile_nav">
+        <ul class="mobile_nav_items">
+            <li>
+                <a href="../packages/index.html">Packages</a>
+            </li>
+            <li>
+                <a href="../tutors/index.html">Tutors</a>
+            </li>
+            <li>
+                <a href="../start_css/index.html">Start CSS</a>
+            </li>
+        </ul>
+    </nav>
+
     <main>
         <div>
             <div class="tutor" id="tutor1">
@@ -33,7 +53,7 @@
                 </div>
                 <div class="tutor_info">
                     <h1 class="tutor_name">Timothy Dykes</h1>
-                    <h2 class="tutor_subtitle">Founder of
+                    <h2 class="tutor_subtitle">The leader of
                         <a href="#">Jeeseon Coding (a.k.a J-Coding)</a>
                     </h2>
                     <p class="tutor_text">You can have the most trendy and effective skills of styling!</p>
@@ -43,7 +63,7 @@
             <div class="tutor" id="tutor2">
                 <div class="tutor_info">
                     <h1 class="tutor_name">Laura Chouette</h1>
-                    <h2 class="tutor_subtitle">The Chef manager of Jeeseon Coding</h2>
+                    <h2 class="tutor_subtitle">The Chef Manager of Jeeseon Coding</h2>
                     <p class="tutor_text">You can develop your own skills and deeply specialize in styling!
                     </p>
                 </div>
@@ -62,5 +82,8 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="../shared.js"></script>
+
 </body>
 </html>

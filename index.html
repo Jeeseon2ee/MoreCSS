@@ -8,10 +8,24 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
+    <div class="backdrop"></div>
+    <div class="modal">
+        <h1>Do you want to continue?</h1>
+        <div class="modal_actions">
+            <a href="start_CSS/index.html" class="modal_action">Yes!</a>
+            <button class="modal_action modal_action_negative" type="button">No!</button>
+        </div>
+    </div>
+
     <header class="main_header">
         <div>
+            <button class="toggle_button">
+                <span class="toggle_button_bar"></span>
+                <span class="toggle_button_bar"></span>
+                <span class="toggle_button_bar"></span>
+            </button>
             <a href="index.html" class="main_header_brand">
-                <span>Jeeseon Lee</span>
+                <div>Jeeseon Coding</div>
                 <img src="logo.png" alt="Jeeseon Lee - Your Star">
             </a>
         </div>
@@ -24,14 +38,28 @@
         </nav>
     </header>
 
+    <nav class="mobile_nav">
+        <ul class="mobile_nav_items">
+            <li>
+                <a href="packages/index.html">Packages</a>
+            </li>
+            <li>
+                <a href="tutors/index.html">Tutors</a>
+            </li>
+            <li>
+                <a href="start_css/index.html">Start CSS</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
     <section id="s1">
         <h1>More about CSS</h1>
         <h2>Let's make a page look more beautiful</h2>
     </section>
 
-    <main>
     <section id="plans">
-        <h1 class="section_title">Choose the best style upon your taste!</h1>
+        <h1 class="section_title">Choose the best style depending on your taste!</h1>
         <div>
             <article class="plan">
                 <h1 class="plan_time">Morning</h1>
@@ -112,5 +140,8 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="shared.js"></script>
+
 </body>
 </html>

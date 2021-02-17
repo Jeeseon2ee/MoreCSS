@@ -8,11 +8,17 @@
     <link rel="stylesheet" href="packages.css">
 </head>
 <body>
+    <div class="backdrop"></div>
     <div class="background"></div>
     <header class="main_header">
         <div>
+            <button class="toggle_button">
+                <span class="toggle_button_bar"></span>
+                <span class="toggle_button_bar"></span>
+                <span class="toggle_button_bar"></span>
+            </button>
             <a href="../index.html" class="main_header_brand">
-                <span>Jeeseon Lee</span>
+                <div>Jeeseon Coding</div>
                 <img src="../logo.png" alt="Jeeseon Lee - Your Star">
             </a>
         </div>
@@ -24,6 +30,20 @@
             </ul>
         </nav>
     </header>
+
+    <nav class="mobile_nav">
+        <ul class="mobile_nav_items">
+            <li>
+                <a href="../packages/index.html">Packages</a>
+            </li>
+            <li>
+                <a href="../tutors/index.html">Tutors</a>
+            </li>
+            <li>
+                <a href="../start_css/index.html">Start CSS</a>
+            </li>
+        </ul>
+    </nav>
 
     <main>
         <section class="package" id="sunset">
@@ -59,5 +79,8 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="../shared.js"></script>
+
 </body>
 </html>

@@ -1,6 +1,6 @@
 .tutor {
-  font-size: 20px;
-  margin: 48px 0;
+  font-size: 1.2rem;
+  margin: 3rem 0;
 }
 
 .tutor_list {
@@ -9,7 +9,7 @@
 }
 
 .tutor:first-of-type {
-  margin-top: 112px;
+  margin-top: 7rem;
 }
 
 .tutor_image_container {
@@ -27,10 +27,10 @@
 
 .tutor_info {
   text-align: right;
-  padding: 14px;
+  padding: 0.9rem;
   display: inline-block;
   vertical-align: middle;
-  width: 20%;
+  width: 30%;
 }
 
 #tutor2 {
@@ -42,13 +42,14 @@
 }
 
 .tutor_name {
-  margin: 3px;
+  margin: 0.2rem;
   color: rgb(7, 89, 92);
+  font-size: 2.3rem;
 }
 
 .tutor_subtitle {
   margin: 0;
-  font-size: 18px;
+  font-size: 1.1rem;
   color: #ccc;
 }
 
@@ -63,6 +64,6 @@
 }
 
 .tutor_text {
-  margin: 3px;
+  margin: 0.2rem;
 }
 
