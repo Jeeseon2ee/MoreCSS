@@ -4,27 +4,113 @@
     <meta charset="utf-8">
     <title>Udemy_CSS</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shared.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <header class="main_header">
         <div>
-            <a href="index.html" class="main_header_brand">Jeeseon Lee</a>
+            <a href="index.html" class="main_header_brand">
+                <span>Jeeseon Lee</span>
+                <img src="logo.png" alt="Jeeseon Lee - Your Star">
+            </a>
         </div>
         <nav class="main_nav">
             <ul class="main_nav_items">
-                <li class="main_nav_item">Html</li>
-                <li class="main_nav_item">CSS</li>
-                <li class="main_nav_item main_nav_item_button">JavaScript</li>
+                <li class="main_nav_item"><a href="packages/index.html">Packages</a></li>
+                <li class="main_nav_item"><a href="tutors/index.html">Tutors</a></li>
+                <li class="main_nav_item main_nav_item_button"><a href="#">Start CSS</a></li>
             </ul>
         </nav>
     </header>
+
     <section id="s1">
         <h1>More about CSS</h1>
+        <h2>Let's make a page look more beautiful</h2>
     </section>
-    <section id="s2">
-        <h1 class="s2_1">Let's make a page look more beautiful</h1>
-        <p>yeah yeah yeah</p>
+
+    <main>
+    <section id="plans">
+        <h1 class="section_title">Choose the best style upon your taste!</h1>
+        <div>
+            <article class="plan">
+                <h1 class="plan_time">Morning</h1>
+                <h2 class="plan_price">Free</h2>
+                <h3>with fresh sunshine</h3>
+                <ul class="plan_features">
+                    <li>1 Photocard</li>
+                    <li>Unlimited Care Service</li>
+                    <li>10 Cute Stickers</li>
+                    <li>The Most Basic Style</li>
+                </ul>
+                <div>
+                    <button class="button">CHOOSE STYLE</button>
+                </div>
+            </article>
+            <article class="plan plan_highlight">
+                <h1 class="reco">Recommended</h1>
+                <h1 class="plan_time">Sunset</h1>
+                <h2 class="plan_price">$10/month</h2>
+                <h3>with gliterring waves</h3>
+                <ul class="plan_features">
+                    <li>5 Photocard</li>
+                    <li>Unlimited Care Service</li>
+                    <li>25 Cute Stickers</li>
+                    <li>The Most Popular Style</li>
+                </ul>
+                <div>
+                    <button class="button">CHOOSE STYLE</button>
+                </div>
+            </article>
+            <article class="plan">
+                <h1 class="plan_time">Dawn</h1>
+                <h2 class="plan_price">$25/month</h2>
+                <h3>with shimmering moonlight</h3>
+                <ul class="plan_features">
+                    <li>5 Photocard</li>
+                    <li>Unlimited Care Service</li>
+                    <li>50 Cute Stickers</li>
+                    <li>The Most Professional Style</li>
+                </ul>
+                <div>
+                    <button class="button">CHOOSE STYLE</button>
+                </div>
+            </article>
+        </div>
     </section>
+
+    <section id="reasons">
+        <h1 class="section_title">Many Good Reasons to Stick Around</h1>
+        <ul>
+            <li>
+                <div id="reason_review">
+                    
+                </div>
+                <p>4.9/5 Average Customers' Review</p>
+            </li>
+            <li>
+                <div id="reason_guarantee">
+
+                </div>
+                <p>99.99% Uptime Guarantee</p>
+            </li>
+            <li>
+                <div id="reason_delivery">
+
+                </div>
+                <p>Lightning Fast Delivery</p>
+            </li>
+        </ul>
+    </section>
+    </main>
+
+    <footer class="main_footer">
+        <nav>
+            <ul>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Terms of Use</a></li>
+            </ul>
+        </nav>
+    </footer>
 </body>
 </html>

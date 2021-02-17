@@ -1,0 +1,93 @@
+main {
+    padding-top: 32px;
+}
+
+.background {
+    background: url("../main.jpg") center/cover;
+    filter: grayscale(25%);
+    width: 100%;
+    height: 100%;
+    /*background-size: cover;
+    background-repeat: no-repeat;*/
+    position: fixed;
+    z-index: -1;
+}
+
+.package {
+    width: 80%;
+    margin: 16px 0;
+    border: 2px solid grey;
+    border-left: none;
+    position: relative;
+    z-index: 5;
+}
+
+.package:hover,
+.package:active {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+    border-color: yellowgreen;
+}
+
+.package a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 16px;
+}
+
+.package h2 {
+    color: rgb(119, 119, 119);
+}
+
+.package p {
+    font-size: 18px;
+    border: 1px solid black;
+    padding: 8px;
+    background: white;
+}
+
+.floatclear {
+    clear: both;
+}
+
+#sunset {
+    background: rgba(164, 196, 255, 0.85);
+    margin-top: 64px;
+}
+
+#sunset h3 {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 12px;
+    color: white;
+    background: rgb(7, 89, 92);
+    padding: 8px 16px;
+}
+
+#morning {
+    background: rgba(146, 184, 255, 0.85);
+    float: right;
+    border-right: none;
+    border-left: 2px solid grey;
+    text-align: right;   
+}
+
+#morning:hover,
+#morning:active {
+    border-left-color: yellowgreen;
+}
+
+#dawn {
+    background: rgba(117, 165, 255, 0.85);
+}
+
+#dawn h1 {
+    color: white;
+}
+
+#dawn h2 {
+    color:rgb(116, 116, 116);
+}
