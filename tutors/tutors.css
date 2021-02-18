@@ -1,21 +1,18 @@
 .tutor {
   font-size: 1.2rem;
-  margin: 3rem 0;
-}
-
-.tutor_list {
-  width: 80%;
-  margin: auto;
+  /*margin: 3rem 0;*/
 }
 
 .tutor:first-of-type {
-  margin-top: 7rem;
+  /*margin-top: 7rem;*/
+  margin-top: 6rem;
 }
 
 .tutor_image_container {
-  width: 65%;
-  display: inline-block;
-  vertical-align: middle;
+  /*width: 65%;*/
+  width: 100%;
+  /*display: inline-block;*/
+  /*vertical-align: middle;*/
   box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.3);
 }
 
@@ -28,9 +25,10 @@
 .tutor_info {
   text-align: right;
   padding: 0.9rem;
-  display: inline-block;
+  /*display: inline-block;
   vertical-align: middle;
-  width: 30%;
+  width: 30%;*/
+  font-size: 1rem;
 }
 
 #tutor2 {
@@ -67,3 +65,27 @@
   margin: 0.2rem;
 }
 
+@media (min-width: 40rem) {
+  .tutor {
+    margin: 3rem auto;
+    max-width: 1500px;
+  }
+  
+  .tutor:first-of-type {
+    margin-top: 7rem;
+  }
+  
+  .tutor_image_container {
+    width: 65%;
+    display: inline-block;
+    vertical-align: middle
+
+  }
+  
+  .tutor_info {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30%;
+    font-size: 1.25rem;
+  }
+}

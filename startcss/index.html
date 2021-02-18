@@ -6,7 +6,7 @@
     <title>Udemy_CSS</title>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../shared.css">
-    <link rel="stylesheet" href="packages.css">
+    <link rel="stylesheet" href="start.css">
 </head>
 <body>
     <div class="backdrop"></div>
@@ -46,30 +46,28 @@
         </ul>
     </nav>
 
-    <main>
-        <section class="package" id="sunset">
-            <a href="#">
-                <h1>Our Sunset Package</h1>
-                <h3>RECOMMENDED</h3>
-                <h2>The most popular choice of our customers.</h2>
-                <p>It remains its popularity and sales for 5 years!</p>
-            </a>
-        </section>
-        <section class="package" id="morning">
-            <a href="#">
-                <h1>Our Monrning Package</h1>
-                <h2>An extremely solid start into our decoration world.</h2>
-                <p>Get started immediately at zero cost!</p>
-            </a>
-        </section>
-        <div class="floatclear"></div>
-        <section class="package" id="dawn">
-            <a href="#">
-                <h1>Our Dawn Package</h1>
-                <h2>All your enterprise needs. Instant support, guaranteed uptime.</h2>
-                <p>The best solution if you are already an expert of styling. Because the package has everything!</p>
-            </a>
-        </section>
+    <main class="signup">
+        <h1>Awesome! Let's dive right in!</h1>
+        <form action="index.html" class="signup_form">
+            <label for="title">Title</label>
+            <select id="title">
+                <option value="mr">Mr.</option>
+                <option value="ms">Ms.</option>
+            </select>
+            <label for="firstname">First name</label>
+            <input type="text" id="firstname">
+            <label for="lastname">Last name</label>
+            <input type="text" id="lastname">
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+            <input type="checkbox" id="agree_terms">
+            <label for="agree_terms">Agree to
+                <a href="#">Terms &amp; Conditions</a>
+            </label>
+            <button type="submit" class="button">Sign up</button>
+        </form>
     </main>
 
     <footer class="main_footer">

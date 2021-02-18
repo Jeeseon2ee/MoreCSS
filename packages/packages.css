@@ -60,7 +60,7 @@ main {
     z-index: 10;
     top: 0;
     right: 0;
-    margin: 1.25rem;
+    margin: 0.5rem;
     font-size: 0.75rem;
     color: white;
     background: rgb(7, 89, 92);
@@ -90,4 +90,26 @@ main {
 
 #dawn h2 {
     color:rgb(116, 116, 116);
+}
+
+@media (min-width: 40rem) {
+    main {
+      margin: 0 auto;
+      max-width: 1500px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .package {
+        border-left: 2px solid grey;
+    }
+
+    #morning {
+        border-right: 2px solid grey;  
+    }
+
+    #morning:hover,
+    #morning:active {
+        border-right-color: yellowgreen;
+}
 }

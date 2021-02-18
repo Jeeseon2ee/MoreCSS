@@ -10,11 +10,11 @@ var mobileNav = document.querySelector(".mobile_nav");
 // console.dir(backdrop);
 for (var i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener("click", function() {
-    // modal.style.display = "block";
-    // backdrop.style.display = "block";
+    modal.style.display = "block";
+    backdrop.style.display = "block";
     // modal.className = 'open'; // This will actually overwrite the complete class list
-    modal.classList.add("open");
-    backdrop.classList.add("open");
+    //modal.classList.add("open");
+    //backdrop.classList.add("open");
   });
 }
 
@@ -29,8 +29,8 @@ if (modalNoButton) {
 }
 
 function closeModal() {
-  //   backdrop.style.display = "none";
-  //   modal.style.display = "none";
+  backdrop.style.display = "none";
+  modal.style.display = "none";
   if (modal) {
     modal.classList.remove("open");
   }

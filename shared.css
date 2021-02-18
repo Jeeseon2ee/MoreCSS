@@ -4,6 +4,10 @@ body {margin:0;
       font-family: 'Open Sans Condensed', sans-serif;
       }
 
+main {
+    min-height: calc(100vh - 8rem);
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -59,7 +63,6 @@ body {margin:0;
     vertical-align: middle;
     margin-bottom: 0.5rem;
     height: 1.25rem;
-    /*width: 1.25rem;*/
 }
 .main_header_brand div {
     display: inline-block;
@@ -71,15 +74,17 @@ body {margin:0;
 }
 .main_header_brand img {
     height: 100%;
-    /*width: 100%;*/
     display: inline-block;
     vertical-align: middle;
 }
 
-.main_nav {display: inline-block;
+.main_nav {
+    display: none;
+    /*display: inline-block;*/
     text-align: right;
-    width: calc(100% - 200px);
-    vertical-align: middle;}
+    width: calc(100% - 133.5px);
+    vertical-align: middle;
+}
 
 .main_nav_items {margin; 0;
         padding: 0;
@@ -131,8 +136,9 @@ text-align: center;
 }
 
 .main_footer li {
-display: inline-block;
-margin: 0 1rem;
+/*display: inline-block;*/
+/*margin: 0 1rem;*/
+margin: 0.5rem 0;
 }
 
 .main_footer li a {
@@ -194,4 +200,19 @@ color: black;
 
 .open {
     display: block;
+}
+
+@media (min-width: 40rem) {
+    .main_nav {
+        display: inline-block;
+    }
+
+    .toggle_button {
+        display: none;
+    }
+
+    .main_footer li {
+        display: inline-block;
+        margin: 0 1rem;
+    }
 }

@@ -1,0 +1,85 @@
+main {
+    margin-top: 3rem;
+    padding-top: 1rem;
+}
+
+.signup h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: cornflowerblue;
+}
+
+.signup_form {
+    padding: 1rem;
+}
+
+.signup_form label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.signup_form label,
+.signup_form input,
+.signup_form select {
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/*.signup_form input[type="checkbox"]*/
+.signup_form input[id*="terms"],
+.signup_form input[id*="terms"] + label {
+    display:inline-block;
+    width: auto;
+    vertical-align: bottom;
+}
+
+.signup_form input,
+.signup_form select {
+    border: 1px solid grey;
+    border-radius: 7px;
+    padding: 0.2rem 0.5rem;
+    font: inherit;
+}
+
+.signup_form input:focus,
+.signup_form select:focus {
+    outline: none;
+    background:rgb(186, 220, 231);
+}
+
+.signup_form input[type="checkbox"] {
+    border: 1px solid grey;
+    background: white;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /*위 세개 none은 default값을 다 지워주는 역할*/
+}
+
+.signup_form input[type="checkbox"]:checked {
+    background: cornflowerblue;
+}
+
+
+/*.signup_form input.invalid,
+.signup_form select.invalid*/
+.signup_form :invalid {
+    background: rgb(255, 151, 151);
+}
+
+.signup_form button[type="submit"] {
+    display: block;
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 40rem) {
+    .signup_form {
+        margin: auto;
+        width: 30rem;
+    }
+}
