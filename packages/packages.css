@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "anonymousPro";
+    src:url("anonymousPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "anonymousPro";
+    src:url("anonymousPro-Bold.ttf") format("truetype");
+    font-weight: 700;
+}
+
 main {
     padding-top: 2rem;
 }
@@ -40,10 +51,15 @@ main {
 }
 
 .package p {
-    font-size: 1.12rem;
+    font-size: 1.2rem;
     border: 1px solid black;
     padding: 0.5rem;
     background: white;
+    /*font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-family: "anonymousPro-Bold", sans-serif;
+    font-weight: 700;*/
+    /*font: style variant weight size line-height family*/
 }
 
 .floatclear {
