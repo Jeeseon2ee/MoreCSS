@@ -1,6 +1,5 @@
 main {
-    margin-top: 3rem;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
 }
 
 .signup h1 {
@@ -11,6 +10,9 @@ main {
 
 .signup_form {
     padding: 1rem;
+    display: grid;
+    grid-auto-rows: 2rem;
+    grid-row-gap: 0.5rem;
 }
 
 .signup_form label {
@@ -22,7 +24,7 @@ main {
 .signup_form input,
 .signup_form select {
     display: block;
-    margin-top: 1rem;
+    /*margin-top: 1rem;*/
     width: 100%;
 }
 
@@ -73,7 +75,6 @@ main {
 
 .signup_form button[type="submit"] {
     display: block;
-    margin-top: 1rem;
 }
 
 
@@ -81,5 +82,12 @@ main {
     .signup_form {
         margin: auto;
         width: 30rem;
+        grid-template-columns: 10rem auto;
+        grid-row-gap: 1rem;
+        grid-column-gap: 0.5rem;
+    }
+
+    .signup_form_checkbox {
+        grid-column: span 2;
     }
 }
