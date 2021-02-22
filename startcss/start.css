@@ -1,5 +1,5 @@
 main {
-    padding-top: 1.5rem;
+    padding-top: 2rem;
 }
 
 .signup h1 {
@@ -89,5 +89,9 @@ main {
 
     .signup_form_checkbox {
         grid-column: span 2;
+    }
+
+    main {
+        padding-top: 3rem;
     }
 }

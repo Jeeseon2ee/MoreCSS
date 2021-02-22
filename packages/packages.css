@@ -34,6 +34,7 @@
 .package:active {
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
     border-color: yellowgreen;
+    animation: up 400ms forwards;
 }
 
 .package a {
@@ -130,5 +131,17 @@
     #morning:hover,
     #morning:active {
         border-right-color: yellowgreen;
+    }
 }
+
+@keyframes up {
+    0% {
+        transform: translateY(0)
+    }
+    50% {
+        transform: translateY(-1rem)
+    }
+    100% {
+        transform: translateY(-0.5rem)
+    }
 }
